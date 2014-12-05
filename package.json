@@ -1,0 +1,32 @@
+{
+  "name": "angularjs.tdd",
+  "version": "0.0.1",
+  "description": "programistamag.angular.tdd\r ==========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zkamil/programistamag.angular.tdd"
+  },
+  "author": "Kamil Zasada <pankamilz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zkamil/programistamag.angular.tdd/issues"
+  },
+  "homepage": "https://github.com/zkamil/programistamag.angular.tdd",
+  "devDependencies": {
+    "browser-sync": "^1.7.2",
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "gulp-karma": "0.0.4",
+    "gulp-sass": "^1.2.4",
+    "jasmine-core": "^2.1.3",
+    "jshint-stylish": "^1.0.0",
+    "karma": "^0.12.28",
+    "karma-chrome-launcher": "^0.1.5",
+    "karma-jasmine": "^0.3.2",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/app.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+
+                <h1>app</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aut dolor dolorum id incidunt inventore necessitatibus non perspiciatis porro quam ratione sapiente velit, voluptas? Eaque nostrum repellat saepe voluptate. Quam.</p>
+
+                <div ui-view></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/app.conf.js"></script>
+    <script src="app/common/models/users-model.js"></script>
+    <script src="app/users/users.js"></script>
+    <script src="app/users/users.conf.js"></script>
+    <script src="app/users/controllers/usersListCtrl.js"></script>
+    <script src="app/users/controllers/usersSingleCtrl.js"></script>
+
+</body>
+</html>
