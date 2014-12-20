@@ -2,5 +2,6 @@
 
 angular.module('app', [
     'ui.router',
-    'app.users'
+    'app.filters.firstUpperCase',
+    'app.contacts'
 ]);

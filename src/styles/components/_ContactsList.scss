@@ -1,0 +1,40 @@
+.ContactsList {
+    list-style: none;
+    padding: 0;
+    margin: -15px 0 30px;
+
+    li {
+        border-top: 1px solid #ecf0f1;
+
+        &:first-child {
+            border: 0;
+        }
+    }
+}
+
+.ContactsList-item {
+    display: block;
+    overflow: hidden;
+
+    figure {
+        float: left;
+        width: 100px;
+        margin: 15px;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    span {
+        float: left;
+        display: block;
+        margin: 25px 15px 0 15px;
+        font-size: 3rem;
+    }
+
+    em {
+        display: block;
+        color: #2c3e50;
+        font-size: 2rem;
+        margin: -12px 0 0;
+    }
+}

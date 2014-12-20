@@ -46,7 +46,11 @@ gulp.task('browser-sync', function() {
 
 gulp.task('build', []);
 
-gulp.task('default', ['sass', 'browser-sync'], function() {
+gulp.task('serve', ['sass', 'browser-sync'], function() {
     gulp.watch(app.scss, ['sass']);
     gulp.watch(app.js, ['js', reload])
 });
+
+gulp.task('default', [
+    'serve'
+]);

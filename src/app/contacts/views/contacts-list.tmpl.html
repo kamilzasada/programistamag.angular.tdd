@@ -1,0 +1,13 @@
+<ul class="ContactsList">
+    <li ng-repeat="contact in contactsListCtrl.contacts">
+        <a class="ContactsList-item" ui-sref="app.contacts-single({ id: contact.seed })">
+            <figure>
+                <img class="img-responsive" ng-src="{{ contact.user.picture.medium }}" alt=""/>
+            </figure>
+            <span>
+                {{ contact.user.name.first | firstUpperCase }} {{ contact.user.name.last | firstUpperCase }}
+                <em>{{ contact.user.email }}</em>
+            </span>
+        </a>
+    </li>
+</ul>

@@ -6,7 +6,8 @@ angular.module('app')
         $stateProvider
             .state('app', {
                 url: '',
-                abstract: true
+                //abstract: true
+                template: '<div ui-view></div>'
             });
 
             $urlRouterProvider.otherwise('/');
