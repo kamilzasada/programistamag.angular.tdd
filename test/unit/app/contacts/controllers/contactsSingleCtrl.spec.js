@@ -14,13 +14,13 @@ describe('ContactsSingleCtrl', function() {
         expect(ctrl).toBeDefined();
     });
 
-    //it('should check password strenght', function() {
-    //    $scope.recruit = {
-    //        user: {
-    //            password: '12345'
-    //        }
-    //    };
-    //
-    //    expect($scope.strenght()).toBe('weak');
-    //});
+    it('should check password strength', function() {
+        ctrl.contact = {
+            user: {
+                password: '12345'
+            }
+        };
+
+        expect(ctrl.passwordStrength()).toBe('weak');
+    });
 });

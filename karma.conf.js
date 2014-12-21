@@ -24,6 +24,8 @@ module.exports = function(config) {
         'src/app/contacts/contacts.js',
         'src/app/**/*.js',
 
+        'src/app/common/directives/*.html',
+
         'test/unit/**/*.js'
     ],
 
@@ -36,6 +38,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+        'src/app/common/directives/*.html': ['ng-html2js']
     },
 
 
@@ -69,6 +72,12 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: false,
+
+
+    ngHtml2JsPreprocessor: {
+        stripPrefix: 'src/',
+        moduleName: 'test.templates'
+    }
   });
 };

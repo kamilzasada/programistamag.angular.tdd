@@ -1,7 +1,35 @@
-<div class="row">
+<div class="Contact">
 
-    <img ng-src="{{ contactsSingleCtrl.contact.user.picture.medium }}" alt=""/>
+    <div class="Contact-header">
+        <figure class="Contact-img">
+            <img class="img-responsive" ng-src="{{ contactsSingleCtrl.contact.user.picture.medium }}" alt=""/>
+        </figure>
 
-    {{ contactsSingleCtrl.contact.user.name.first }} {{ contactsSingleCtrl.contact.user.name.last }}
-    
+        <p class="Contact-name">{{ contactsSingleCtrl.contact.user.name.first | firstUpperCase }} {{ contactsSingleCtrl.contact.user.name.last | firstUpperCase }}</p>
+    </div>
+
+    <hr/>
+
+    <div class="Contact-bio">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad inventore iure quidem. Earum, eligendi qui? Autem, debitis dolore eaque explicabo itaque magni nihil repellendus repudiandae sequi soluta, totam veniam vero!</p>
+    </div>
+
+    <hr/>
+
+    <ul>
+        <li><strong>userID:</strong> {{ contactsSingleCtrl.contact.seed }}</li>
+        <li>
+            <strong>password:</strong>
+            <span ng-class="{
+                'is-strong': contactsSingleCtrl.passwordStrength() === 'strong',
+                'is-weak': contactsSingleCtrl.passwordStrength() === 'weak'
+            }">{{ contactsSingleCtrl.passwordStrength() }}</span>
+        </li>
+    </ul>
+
+    <contact-card contact="contactsSingleCtrl.contact.user"></contact-card>
+
+    <hr/>
+
+    <a class="btn btn-default" ui-sref="app.contacts-list">Back</a>
 </div>

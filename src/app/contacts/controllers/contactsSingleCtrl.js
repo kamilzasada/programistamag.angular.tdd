@@ -11,13 +11,9 @@ angular.module('app.contacts')
             //error
         });
 
-        vm.strenght = function() {
-            var size = null;
-
+        vm.passwordStrength = function() {
             if (vm.contact) {
-                size = vm.contact.user.password.length;
-
-                if ( size < 6 ) {
+                if ( vm.contact.user.password.length < 6 ) {
                     return 'weak';
                 }
                 else {

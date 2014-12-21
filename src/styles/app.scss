@@ -1,5 +1,14 @@
 @import "components/ContactsList";
+@import "components/Contact";
 
-body {
-    font-weight: normal;
+.btn-default {
+    background: #bdc3c7;
+}
+
+.is-strong {
+    color: #2ecc71;
+}
+
+.is-weak {
+    color: #c9302c;
 }
